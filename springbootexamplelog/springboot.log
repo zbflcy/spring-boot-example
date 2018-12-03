@@ -1,0 +1,9 @@
+2018-11-22 20:50:07.403  INFO 4116 --- [main] l.s.SpringbootexamplelogApplicationTests : Starting SpringbootexamplelogApplicationTests on DESKTOP-6F17IU6 with PID 4116 (started by zbflcy in F:\springbootexample\springbootexamplelog)
+2018-11-22 20:50:07.418 DEBUG 4116 --- [main] l.s.SpringbootexamplelogApplicationTests : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2018-11-22 20:50:07.431  INFO 4116 --- [main] l.s.SpringbootexamplelogApplicationTests : No active profile set, falling back to default profiles: default
+2018-11-22 20:50:09.035  INFO 4116 --- [main] l.s.SpringbootexamplelogApplicationTests : Started SpringbootexamplelogApplicationTests in 2.639 seconds (JVM running for 4.814)
+2018-11-22 20:50:09.288 TRACE 4116 --- [main] l.s.SpringbootexamplelogApplicationTests : 这是trace 日志
+2018-11-22 20:50:09.289 DEBUG 4116 --- [main] l.s.SpringbootexamplelogApplicationTests : 这是debug日志
+2018-11-22 20:50:09.289  INFO 4116 --- [main] l.s.SpringbootexamplelogApplicationTests : 这是info日志
+2018-11-22 20:50:09.289  WARN 4116 --- [main] l.s.SpringbootexamplelogApplicationTests : 这是warn日志
+2018-11-22 20:50:09.289 ERROR 4116 --- [main] l.s.SpringbootexamplelogApplicationTests : 这是error日志
