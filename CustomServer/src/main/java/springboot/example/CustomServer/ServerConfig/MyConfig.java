@@ -14,7 +14,7 @@ import springboot.example.CustomServer.Servlet.MyServlet;
 
 import java.util.Arrays;
 
-@Configuration
+//@Configuration
 public class MyConfig {
 
 

@@ -1,6 +1,6 @@
 package springboot.example.CustomServer.Servlet;
 
-import org.springframework.context.annotation.Bean;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.ServletException;
@@ -10,8 +10,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * Created by curry on 18-12-5.
+ */
 @WebServlet
-public class MyServlet extends HttpServlet {
+
+public class BeanServlet extends HttpServlet {
+    @Value("${custom.properties}")
+    String properties;
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doPost(req, resp);
@@ -19,7 +26,8 @@ public class MyServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("hello myservlet");
-        resp.getWriter().write("hello my servlet");
+
+        resp.getWriter().write(properties);
+
     }
 }
