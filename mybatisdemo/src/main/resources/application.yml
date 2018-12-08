@@ -1,0 +1,48 @@
+spring:
+  datasource:
+    username: root
+    password: 1202
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.1.15.225:3307/mybatis
+    type: com.alibaba.druid.pool.DruidDataSource
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+mybatis:
+  config-location: classpath:Mybatis/mybatis-config.xml
+  mapper-locations: classpath:Mybatis/mapper/*.xml
+
+
+
+
+#    schema-username: root
+#    schema-password: 1202
+#    schema:
+#      - classpath:sql/department.sql
+#      - classpath:sql/employee.sql
+#    initialization-mode: always
+
+
+#    initialSize: 5
+#    maxActive: 20
+#    maxWait: 60000
+#    time-between-eviction-run-mills: 60000
+#    min-evictable-idle-time-millis: 30000
+#    validation-query: SELECT 1 FROM DUAL
+#    test-while-idle: true
+#    test-on-borrow: false
+#    test-on-return: false
+#    pool-prepared-statements: true
+#
+##    配置监控统计拦截的filter，去掉监控界面之后sql无法统计，wall用于防火墙
+#    filters: stat,wall
+#    max-pool-prepared-statement-per-connection-size: 20
+#    use-global-data-source-stat: true
+#    connection-peroperties: durid.stat.mergeSql=true,druid.stat.slowSqlMilis=500
+
+
+
+
+

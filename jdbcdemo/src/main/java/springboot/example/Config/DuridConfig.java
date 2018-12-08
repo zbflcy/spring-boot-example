@@ -9,7 +9,6 @@ import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import javax.sql.DataSource;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -55,6 +54,7 @@ public class DuridConfig {
     //配置一个监控的filter
 
 
+    @Bean
     public FilterRegistrationBean webStatFilter() {
         FilterRegistrationBean<WebStatFilter> webStatFilterFilterRegistrationBean = new FilterRegistrationBean<>(new WebStatFilter());
         Map<String, String> map = new HashMap<>();
